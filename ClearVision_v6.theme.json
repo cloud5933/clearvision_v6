@@ -1,83 +1,153 @@
 {
-    "/**\n * @name ClearVision\n * @author ClearVision Team\n * @version 6.9.0\n * @description Highly customizable theme for BetterDiscord.\n * @source https://github.com/ClearVision/ClearVision-v6\n * @website https://clearvision.github.io\n * @invite dHaSxn3\n */\n\n/* Credits to Zerthox for making the original theme. */\n\n/* IMPORT CSS */\n@import url(https://clearvision.github.io/ClearVision-v6/main.css);\n\n/* SETTINGS */\n:root": {
-      "/* ACCENT COLORS */\n  --main-color": "#ffcaff",
-      "/* main accent color (hex, rgb or hsl) [default": "#2780e6] */\n  --hover-color",
-      "/* hover accent color (hex, rgb or hsl) [default": "#1e63b3] */\n  --success-color",
-      "/* success accent color (hex, rgb or hsl) [default": "#43b581] */\n  --danger-color",
-      "/* danger accent color (hex, rgb or hsl) [default": "#982929] */\n  --url-color",
-      "/*The color of url links [default": "var(--main-color)]*/\n\n  /* STATUS COLORS */\n  --online-color",
-      "/* online status color (hex, rgb or hsl) [default": "#43b581] */\n  --idle-color",
-      "/* idle status color (hex, rgb or hsl) [default": "#faa61a] */\n  --dnd-color",
-      "/* dnd status color (hex, rgb or hsl) [default": "#982929] */\n  --streaming-color",
-      "/* streaming status color (hex, rgb or hsl) [default": "#593695] */\n  --offline-color",
-      "/* offline/invisible status color (hex, rgb or hsl) [default": "#808080] */\n\n  /* GENERAL */\n  --main-font",
-      "/* main font for app (font must be installed) [default": "gg sans, Helvetica Neue, Helvetica, Arial, sans-serif] */\n  --code-font",
-      "/* font for codeblocks (font must be installed) [default": "Consolas, Liberation Mono, Menlo, Courier, monospace] */\n  --text-normal",
-      "/* color of default discord text */\n  --text-muted": "rgb(114, 118, 125)",
-      "/* color of default discord muted text (e.g.text found in input fields before typing).*/\n  --channels-width": "220px",
-      "/* channel list width (240px for Discord default) [default": "220px] */\n  --members-width",
-      "/* member list width [default": "240px] */\n\n  /* APP BACKGROUND */\n  --background-shading",
-      "/* app background shading (0 for complete smoothness) [default": "100%] */\n  --background-overlay",
-      "/* app background overlay color/gradient [default": "rgba(0, 0, 0, 0.6)] */\n  --background-image",
-      "/* app background image (link must be HTTPS) [default": "var(--background-image)] */\n  --user-modal-position",
-      "/* app background position [default": "center] */\n  --background-size",
-      "/* app background size [default": "cover] */\n  --background-repeat",
-      "/* app background repeat [default": "no-repeat] */\n  --background-attachment",
-      "/* app background attachment [default": "fixed] */\n  --background-brightness",
-      "/* app background brightness (< 100% for darken, > 100% for lighten) [default": "100%] */\n  --background-contrast",
-      "/* app background contrast [default": "100%] */\n  --background-saturation",
-      "/* app background saturation [default": "100%] */\n  --background-invert",
-      "/* app background invert (0 - 100%)  [default": "0%] */\n  --background-grayscale",
-      "/* app background grayscale ( 0 - 100%) [default": "0%] */\n  --background-sepia",
-      "/* app background sepia (0 - 100%) [default": "0%] */\n  --background-blur",
-      "/* app background blur [default": "0px] */\n\n  /* HOME BUTTON ICON */\n  --home-icon",
-      "/* home button icon (link must be HTTPS) [default": "url(https",
-      "/* home button icon position [default": "center] */\n  --home-size",
-      "/* home button icon size [default": "40px] */\n\n  /* CHANNEL COLORS */\n  --channel-unread",
-      "/* Unread Server channel color. [default": "var(--main-color)] THIS OVERRIDES YOUR MAIN COLOR*/\n  --channel-color",
-      "/*Read Server channel color  [default": "rgba(255,255,255,0.3)",
-      "]*/\n  --channel-text-selected": "#fff",
-      "/* Selected channel text color, CV default is #fff */\n  --muted-color": "rgba(255, 255, 255, 0.1)",
-      "/*Muted channel color  [default": "rgba(255,255,255,0.1)",
-      "]*/\n\n  /* MODAL BACKDROP */\n  --backdrop-overlay": "rgba(0, 0, 0, 0.8)",
-      "/* modal backdrop overlay color/gradient [default": "rgba(0, 0, 0, 0.8)] */\n  --backdrop-image",
-      "/* modal backdrop image (link must be HTTPS) [default": "var(--background-image)] */\n  --backdrop-position",
-      "/* modal backdrop position [default": "var(--background-position)] */\n  --backdrop-size",
-      "/* modal backdrop size [default": "var(--background-size)] */\n  --backdrop-repeat",
-      "/* modal backdrop repeat [default": "var(--background-repeat)] */\n  --backdrop-attachment",
-      "/* modal backdrop attachment [default": "var(--background-attachment)] */\n  --backdrop-brightness",
-      "/* modal backdrop brightness (< 100% for darken, > 100% for lighten) [default": "var(--background-brightness)] */\n  --backdrop-contrast",
-      "/* modal backdrop contrast [default": "var(--background-contrast)] */\n  --backdrop-saturation",
-      "/* modal backdrop saturation [default": "var(--background-saturation)] */\n  --backdrop-invert",
-      "/* modal backdrop invert (0 - 100%)  [default": "var(--background-invert)] */\n  --backdrop-grayscale",
-      "/* modal backdrop grayscale ( 0 - 100%) [default": "var(--background-grayscale)] */\n  --backdrop-sepia",
-      "/* modal backdrop sepia (0 - 100%) [default": "var(--background-sepia)] */\n  --backdrop-blur",
-      "/* modal backdrop blur [default": "var(--background-blur)] */\n\n  /* USER POPOUT BACKGROUND */\n  --user-popout-image",
-      "/* user popout background position [default": "var(--background-position)] */\n  --user-popout-size",
-      "/* user popout background size [default": "var(--background-size)] */\n  --user-popout-repeat",
-      "/* user popout background repeat [default": "var(--background-repeat)] */\n  --user-popout-attachment",
-      "/* user popout background attachment [default": "var(--background-attachment)] */\n  --user-popout-brightness",
-      "/* user popout background brightness (< 100% for darken, > 100% for lighten) [default": "var(--background-brightness)] */\n  --user-popout-contrast",
-      "/* user popout background contrast [default": "var(--background-contrast)] */\n  --user-popout-saturation",
-      "/* user popout background saturation [default": "var(--background-saturation)] */\n  --user-popout-invert",
-      "/* user popout background invert (0 - 100%) [default": "var(--background-invert)] */\n  --user-popout-grayscale",
-      "/* user popout background grayscale (0 - 100%) [default": "var(--background-grayscale)] */\n  --user-popout-sepia",
-      "/* user popout background sepia (0 - 100%) [default": "var(--background-sepia)] */\n  --user-popout-blur",
-      "/* user popout background blur [default": "calc(var(--background-blur) + 3px)] */\n  --user-popout-overlay",
-      "/* user popout overlay color [default": "rgba(0, 0, 0, .6)] */\n\n  /* USER MODAL BACKGROUND */\n  --user-modal-image",
-      "/* user modal background position [default": "var(--background-position)] */\n  --user-modal-size",
-      "/* user modal background size [default": "var(--background-size)] */\n  --user-modal-repeat",
-      "/* user modal background repeat [default": "var(--background-repeat)] */\n  --user-modal-attachment",
-      "/* user modal background attachment [default": "var(--background-attachment)] */\n  --user-modal-brightness",
-      "/* user modal background brightness (< 100% for darken, > 100% for lighten) [default": "var(--background-brightness)] */\n  --user-modal-contrast",
-      "/* user modal background contrast [default": "var(--background-contrast)] */\n  --user-modal-saturation",
-      "/* user modal background saturation [default": "var(--background-saturation)] */\n  --user-modal-invert",
-      "/* user modal background invert (0 - 100%) [default": "var(--background-invert)] */\n  --user-modal-grayscale",
-      "/* user modal background grayscale (0 - 100%) [default": "var(--background-grayscale)] */\n  --user-modal-sepia",
-      "/* user modal background sepia (0 - 100%) [default": "var(--background-sepia)] */\n  --user-modal-blur",
-      "/* user modal background blur [default": "calc(var(--background-blur) + 3px)] */\n\n  /* THEME BD COLORS */\n  --bd-blue",
-      "/* betterdiscord main color [default": "var(--main-color)] */\n  --bd-blue-hover",
-      "/* betterdiscord hover color [default": "var(--hover-color)] */\n  --bd-blue-active",
-      "/* betterdiscord active color [default": "var(--hover-color)] */"
+    "name": "LuffyGear5",
+    "version": "1.2",
+    "description": "Theme Inspired By One Piece",
+    "color": "#FF4500",
+    "authors": [
+      {
+        "name": "mxdhav",
+        "id": "757530324686340197"
+      }
+     ],
+     "theme_color_map": {
+        "KEYBOARD": [
+           "#111111",
+           "#FFFFFF"
+        ],
+        "HEADER_PRIMARY": [
+           "#C0C0C0",
+           "#060607"
+        ],
+        "HEADER_SECONDARY": [
+           "#C0C0C0",
+           "#4f5660"
+        ],
+        "TEXT_NORMAL": [
+           "#FBFBFB",
+           "#2e3338"
+        ],
+        "TEXT_MUTED": [
+           "#B6B6B6",
+           "#747f8d"
+        ],
+        "INTERACTIVE_NORMAL": [
+           "#FFA500",
+           "#4f5660"
+        ],
+        "INTERACTIVE_HOVER": [
+           "#FFD700",
+           "#2e3338"
+        ],
+        "INTERACTIVE_ACTIVE": [
+           "#FFFFFF",
+           "#060607"
+        ],
+        "INTERACTIVE_MUTED": [
+           "#747474",
+           "#c7ccd1"
+        ],
+        "BACKGROUND_PRIMARY": [
+           "#141414",
+           "#ffffff"
+        ],
+        "BACKGROUND_SECONDARY": [
+           "#111111",
+           "#f2f3f5"
+        ],
+        "BACKGROUND_SECONDARY_ALT": [
+           "#0e0e0e",
+           "#ebedef"
+        ],
+        "BACKGROUND_TERTIARY": [
+           "#0E0E0E",
+           "#e3e5e8"
+        ],
+        "BACKGROUND_ACCENT": [
+           "#292929",
+           "#747f8d"
+        ],
+        "BACKGROUND_FLOATING": [
+           "#090909",
+           "#FFFFFF"
+        ],
+        "BACKGROUND_MOBILE_PRIMARY": [
+           "#141414",
+           "#f8f9f9"
+        ],
+        "BACKGROUND_MOBILE_SECONDARY": [
+           "#111111",
+           "#ffffff"
+        ],
+        "BACKGROUND_NESTED_FLOATING": [
+           "#111111",
+           "#ffffff"
+        ],
+        "BACKGROUND_MESSAGE_HOVER": [
+           "rgba(255, 255, 255, 0.02)",
+           "#FFFFFF"
+        ],
+        "BACKGROUND_MODIFIER_HOVER": [
+           "rgba(255, 255, 255, 0.02)",
+           "hsla(214, 9.9%, 50.4%, 0.08)"
+        ],
+        "BACKGROUND_MODIFIER_ACTIVE": [
+           "rgba(255, 255, 255, 0.03)",
+           "hsla(214, 9.9%, 50.4%, 0.16)"
+        ],
+        "BACKGROUND_MODIFIER_SELECTED": [
+           "rgba(255, 255, 255, 0.04)",
+           "hsla(214, 9.9%, 50.4%, 0.24)"
+        ],
+        "BACKGROUND_MODIFIER_ACCENT": [
+           "rgba(255, 255, 255, 0.06)",
+           "hsla(240, 7.7%, 2.5%, 0.08)"
+        ],
+        "SCROLLBAR_THIN_THUMB": [
+           "#292929",
+           "hsla(217, 7.6%, 33.5%, 0.3)"
+        ],
+        "SCROLLBAR_THIN_TRACK": [
+           "transparent",
+           "hsla(0, 0%, 0%, 0)"
+        ],
+        "SCROLLBAR_AUTO_THUMB": [
+           "#292929",
+           "#cccccc"
+        ],
+        "SCROLLBAR_AUTO_TRACK": [
+           "rgba(0, 0, 0, 0.1)",
+           "#f2f2f2"
+        ],
+        "CHANNELTEXTAREA_BACKGROUND": [
+           "transparent",
+           "#ebedef"
+        ],
+        "CHANNEL_ICON": [
+           "#FFA500",
+           "#6a7480"
+        ],
+        "CHANNELS_DEFAULT": [
+           "#FFA500",
+           "#6a7480"
+        ]
+     },
+     "colours": {
+        "PRIMARY_DARK": "#747474",
+        "PRIMARY_DARK_100": "#FFFFFF",
+        "PRIMARY_DARK_200": "#FFFFFF",
+        "PRIMARY_DARK_300": "#B6B6B6",
+        "PRIMARY_DARK_360": "#C8C8C8",
+        "PRIMARY_DARK_400": "#585858",
+        "PRIMARY_DARK_500": "#292929",
+        "PRIMARY_DARK_600": "#111111",
+        "PRIMARY_DARK_630": "#1F1F1F",
+        "PRIMARY_DARK_700": "#090909",
+        "PRIMARY_DARK_800": "#090909",
+        "PRIMARY_DARK_900": "#090909"
+     },
+    "background": {
+      "blur": 0.1,
+      "url": "https://7f2bb99d-a0e1-484a-92b1-8766f239abc9-00-389qvmmvvfxdd.spock.replit.dev/gudwallpaper.jpg",
+      "alpha": 0.65
     }
   }
